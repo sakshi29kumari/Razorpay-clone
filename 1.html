@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>RazorPay</title>
+    <style>
+        .companieslist{
+            animation: 10s infinite linear moveCompany;
+        }
+
+        @keyframes moveCompany {
+            from{
+                right:100%;
+            }
+            to{
+                left:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient-to-tr from-blue-100 to-white">
+    <nav>
+        <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+            
+            <!-- logo -->
+
+            <a href="/" class="cursor-pointer py-3 pr-3">
+                <img
+                src="./razorpay.jpeg"
+                width="145px"
+                height="10px"/>
+            </a>
+
+            <ul class="flex space-x-5">
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payments</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"></div>
+                </li>
+
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                        <a href="#">Banking+</a>
+                        <div class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"></div>
+                </li>
+
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                            <a href="#">Payroll</a>
+                            <!-- <div class="absolute bottom-0 w-full h-1 bg-blue-600 hidden group-hover:block transition-all duration-200"></div> -->
+                </li>
+
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                                <a href="#">Partners</a>
+                                <!-- <div class="absolute bottom-0 w-full h-1 bg-blue-600 hidden group-hover:block transition-all duration-200"></div> -->
+                </li>
+
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Resource</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"></div>
+                </li>
+
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Support</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"></div>
+                </li>
+
+                <li class="text-gray-600 font-sans py-7 hover:text-blue-500 cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Pricing</a>
+                    <div class="absolute bottom-0 w-full h-1 bg-blue-500 hidden group-hover:block transition-all duration-200"></div>
+                </li>
+
+            </ul>
+
+            <div class="flex space-x-7">
+                <img src="./flag2.webp" alt=""
+                width="35px"
+                height="15px">
+
+                <button class="py=2 px-5 text-blue-500 border-blue-500  text-sm font-bold hover:bg-slate-100" >Log in</button>
+                <button class=" py-3 px-5 font-sans rounded-sm text-sm font-bold bg-blue-500 text-white border hover:bg-blue-600">Sign Up ></button>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <div class="relative">
+    <div class="w-10/12 flex flex-row justify-between item-centre mx-auto  transition-all ease-in-out duration-1000 transform translate-x-0 slide">
+        <!-- left part -->
+        <div class="flex flex-col gap-4 mt-[5rem] space-y-8">
+            <h1 class="font-sans font-bold text-[43px] leading-[1.2] w-[600px]" ><p class="text-blue-600">Advanced Payment Solutions</p>
+                <p class="text-blue-950">for India's finest disruptors</p></h1>
+            <p class="font-sans text-gray-500">100+ Payment Methods | Easy Integration | Powerful Dashboard</p>
+        <div>
+            <button class="py-3 px-5 font-sans rounded-sm text-sm font-bold bg-blue-600 text-white border hover:bg-blue-700 cursor-pointer">Sign Up -></button>
+            <a class="border-blue-600  text-blue-600 font-semibold absolute pt-2 px-5 hover:text-blue-700 ml-5 cursor-pointer hover:transition-all duration-200 hover:border-b-2 border-blue-700">Know More</a>
+        </div>
+    </div>
+        <!-- right part -->
+        <img class="w-[750px]" src="https://cdn.razorpay.com/growth/NNitlFIun23dql/1.png" alt="RazorPay Acceptance Payment">
+    </div>
+
+    <!-- search part -->
+    <div class="w-10/12 h-12 border-white border-2 mx-auto bg-white flex felx-row justify-between hover:shadow-lg shadow-gray-800 hover:cursor-pointer" >
+        <!-- <div class="border-l-5 border-blue-600 " ></div> -->
+    <div class="flex felx-row p-3">
+        <img class="w-5 h-5 align-middle" src="./search.jpeg" alt="" loading="lazy">
+        <p class="px-2 text-[15px]">I'm here to </p>
+        <p class="px-1 text-[15px] text-gray-600">Accept Payments</p>
+    </div>
+        <div class="flex flex-row px-3">
+            <p class="px-1 p-3 text-[15px] text-gray-600 hover:text-black">//Find the Best Product for your Business</p>
+            <button><p class=" border-gray-400 border-2 h-8 w-8 font-extrabold hover:bg-blue-600 text-white">-></p></button>
+        </div>
+    </div>
+    <div class="flex flex-row gap-x-36 my-[80px] grayscale hover:grayscale-0 companieslist overflow-hidden">
+        <img class="w-[80px] " src="apollo munich.jpeg" alt="">
+        <img class="w-[80px] " src="ather.jpeg" alt="">
+        <img class="w-[80px] " src="bmw.jpeg" alt="">
+        <img class="w-[80px] " src="book my show.jpeg" alt="">
+        <img class="w-[80px]" src="clear tax.jpeg" alt="">
+        <img class="w-[80px]" src="curefit.jpeg" alt="">
+        <img class="w-[80px]" src="goibiibo.jpeg" alt="">
+        <img class="w-[80px]" src="niit.jpeg" alt="">
+        <img class="w-[80px]" src="nykaa.jpeg" alt="">
+        <img class="w-[80px]" src="paisa bazar.jpeg" alt="">
+        <img class="w-[80px]" src="razorpay.jpeg" alt="">
+        <img class="w-[80px]" src="swiggy.jpeg" alt="">
+        <img class="w-[80px]" src="unacedmy.jpeg" alt="">
+        <img class="w-[80px]" src="urban comany.jpeg" alt="">
+        <img class="w-[80px]" src="zerodha.jpeg" alt="">
+        <img class="w-[80px]" src="zoho.jpeg" alt="">
+    </div>
+    </div>
+
+    <div  class="bg-slate-100">
+        <div class="mx-auto w-10/12 hover:cursor-auto">
+            <p class="text-[60px] pt-[80px] "><span class="font-bold text-slate-800">The all in one</span> <span class="font-bold text-green-600">finance platform</span></p>
+            <p class="font-bold text-slate-800 text-[60px]">you've been looking for</p>
+        </div>
+        <div class="flex flex-row my-[30px] mx-auto w-10/12">
+            <p class="text-slate-500 pr-10 ">With Razorpay, you can:</p>
+            <div class="border-l-2 border-slate-300 pr-10 h-8"></div>
+            <ul class="flex flex-row gap-11 pb-[60px]">
+                <li class="text-slate-800 font-bold hover:cursor-pointer">Accept Payments</li>
+                <li class="text-slate-800 font-bold hover:cursor-pointer">Make Payouts</li>
+                <li class="text-slate-800 font-bold hover:cursor-pointer">Start Business Banking</li>
+                <li class="text-slate-800 font-bold hover:cursor-pointer">Automate Playroll</li>
+                <li class="text-slate-800 font-bold hover:cursor-pointer">Get Credit & Loans</li>
+            </ul>
+        </div>
+        <div class="mx-auto w-10/12 bg-white py-8 px-[5rem]">
+            <p class="font-bold text-slate-900 text-[30px]">Accept Payments</p>
+            <div>
+                <ul class="flex flex-row gap-6 pt-7">
+                    <li class="text-blue-600 font-semibold hover:cursor-pointer">Top Products</li>
+                    <div class="border-b-2 border-blue-500 pt-3"></div>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">On Website/App</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">Plugins</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">On Social Media</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">In-store</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">Internationak</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">With Smart Add-ons</li>
+                </ul>
+            </div>
+            <div class="border-b-2 border-slate-200 pt-3"></div>
+            <div class="flex flex-row gap-4  pt-5">
+            <div class="" >
+                <img class="h-[300px] w-[284px]" src="https://media.razorpay.com/file/platform/home-revamp/product-card-pg-2x.png?w=xl&project=website-media" alt="" loading="lazy">
+
+                <div>
+                <p class="text-slate-800 font-semibold text-[1.2rem] px-3 py-4">Payment Gateway</p>
+                <p class="text-slate-600 text-[0.9rem] px-3 py-1">Offer a seamless payment experience on your website or app</p>
+                </div>
+            </div>
+            <div>
+                <img class="w-[284px] h-[300px]" src="https://media.razorpay.com/file/platform/home-revamp/payment-button-product-img-2x.png?w=xl&project=website-media" alt="" loading="lazy">
+            </div>
+            <div>
+                <img class="w-[284px] h-[300px]" src="https://media.razorpay.com/file/platform/home-revamp/payment-link-product-img-2x.png?w=xl&project=website-media" alt="" loading="lazy">
+            </div>
+            <div>
+                <img class="w-[284px] h-[300px]" src="https://media.razorpay.com/file/platform/home-revamp/product-card-pos-image-2x.png?w=xl&project=website-media" alt="" loading="lazy">
+            </div>
+            <!-- <div>
+                <img class="w-[284px] h-[300px]" src="https://media.razorpay.com/file/platform/home-revamp/payment-pages-product-img-2x.png?w=xl&project=website-media" alt="" loading="lazy">
+            </div> -->
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="mx-auto w-10/12 bg-white py-8 px-[5rem]">
+        <div>
+            <h1 class="font-bold text-slate-800 text-[60px]">Powering every industry. Powering all disruptors.</h1>
+            <!-- <ul>
+                <li><img src="" alt=""></li>
+            </ul> -->
+
+            <div  class="mx-auto w-10/12 bg-white py-5 px-[5rem]">
+                <ul class="flex flex-row gap-6 pt-7">
+                    <li class="text-blue-600 font-semibold hover:cursor-pointer">E-commerce</li>
+                    <div class="border-b-2 border-blue-500 pt-3"></div>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">Education</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">BFSI</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">SaaS</li>
+                    <li class="text-slate-500 font-semibold hover:cursor-pointer hover:text-slate-600">Freelance</li>
+                </ul>
+                <div class="border-b-2 border-slate-200 pt-3"></div>
+            </div>
+
+            <div>
+                <div class="w-100% h-100% bg-[url(https://media.razorpay.com/file/platform/home_page/industry/ecom.png?w=xxxl&project=website-media)] bg-no-repeat bg-cover">
+                    <img class="w-100% h-100%" src="https://media.razorpay.com/file/platform/home_page/industry/ecom.png?w=xxxl&project=website-media" alt="" >
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="bg-slate-200 pb-[150px]" >
+        <h2 class="font-semibold text-slate-800 text-[30px] mx-auto w-10/12 pt-[120px] pb-[50px]">We have innovated at every instance, creating a disruption.</h2>
+    <div class="flex flex-row">
+        <div class="mx-auto w-[848px] h-[564px] bg-white py-8 px-[5rem] mr-0.5">
+            <div class="flex flex-row justify-between">
+                <p class="text-slate-600 font-semibold text-[21px] pb-5">MoneySaver Export Account</p>
+                <img src="net.jpeg" alt="" class="w-5 h-5">
+            </div>
+            <div>
+                <p class="font-sans font-bold text-[43px] leading-[1.2] w-[770px] text-blue-600">Open a virtual account in 200+</p>
+                <p><span class="font-sans font-bold text-[43px] leading-[1.2] text-blue-600">countries,</span><span class="font-sans font-bold text-[43px] leading-[1.2] w-[700px] text-slate-800"> save up to 50% on</span></p>
+                <p class="font-sans font-bold text-[43px] leading-[1.2] w-[800px] text-slate-800">international bank transfer charges.</p>
+                <p class="font-sans font-bold text-[43px] leading-[1.2] w-[700px] text-slate-800">Receive ACH/SWIFT/SEPA /BACS</p>
+                <p class="font-sans font-bold text-[43px] leading-[1.2] w-[700px] text-slate-800 pb-[70px]">payments</p>
+            </div>
+                <p class="text-slate-600 pb-5">Receive international wire transfers with ease with a smart account</p>
+            <div>
+                <button class="py-3 px-5 font-sans rounded-sm text-sm font-bold bg-blue-600 text-white border hover:bg-blue-700">Sign Up -></button>
+                <!-- <button class="font-semibold text-blue-600  py-3 px-5 hover:text-blue-700 hover:border-b-2 border-blue-700 border-spacing-0 ">Know More</button> -->
+                <a href="#" class="font-semibold text-blue-600  pt-3 px-5 group-hover:text-blue-700 hover:border-b-2 border-blue-700 w-3 h-3 transition-all duration-200 border-spacing-0 ">Know More</a>
+            </div>
+        </div>
+
+        <div class="mx-auto w-[336px] h-[564px] bg-white py-8 pl-9 pr-[75px] ml-5">
+            <div class="flex flex-row justify-between">
+                <p class="text-slate-600 font-semibold text-[21px] pb-5">Turbo UPI</p>
+                <img src="upi.jpeg" alt="" class="w-5 h-5" >
+            </div>
+            <div>
+                <p class="font-sans font-semibold text-[23px] leading-[1.2] text-slate-800 pb-[180px]"><span class="font-sans font-semibold text-[23px] leading-[1.2] text-blue-600">Experience a 5X faster checkout,</span >achieve a 10% success rate boost, all without any redirections to UPI apps</p>
+            </div>
+            <div>
+                <p class="text-slate-600">Get India's fastest one-step UPI payment solution for businesses</p>
+            </div>
+    
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue-950 pt-6">
+    <div class="w-100% h-[60px] bg-green-600 ">
+        <ul class="list-inside list-disc flex py-3.5 px-3 gap-x-[60px] text-blue-950 font-bold text-[20px]">
+            <li class="">RUBY</li>
+            <li>JAVA</li>
+            <li>PYTHON</li>
+            <li>PHP</li>
+            <li>NODE JS</li>
+            <LI>DOT NET</LI>
+            <LI>CURL</LI>
+            <li>JAVA</li>
+            <li>PYTHON</li>
+            <li>PHP</li>
+        </ul>
+    </div>
+    <div class="mx-auto w-10/12">
+        <p class="font-semibold text-white text-[60px] pt-[120px]">Razorpay is built</p>
+        <p class="font-semibold text-green-600 text-[60px] pb-[80px]"> for developers by developers </p>
+    </div>
+    <div class="flex flex-row mx-auto w-10/12 gap-4 pb-[120px]">
+        <div>
+            <!-- <img src="/build/browser/static/integrations.f81717ed.svg" alt="" class="w-100% h-100%"> -->
+            <p  class="text-white font-semibold text-[1.2rem] px-3 py-4">Integrations</p>
+            <p class="text-white text-[0.9rem] px-3 py-1">Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>
+            <p class="text-white text-[1rem] px-3 py-1 font-semibold hover:border-b-2 border-white border-spacing-0 hover:cursor-pointer">View Docs -> </p>
+        </div>
+        <div>
+            <!-- <img src="/build/browser/static/integrations.f81717ed.svg" alt="" class="w-100% h-100%"> -->
+            <p  class="text-white font-semibold text-[1.2rem] px-3 py-4">Integrations</p>
+            <p class="text-white text-[0.9rem] px-3 py-1">Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>
+            <p class="text-white text-[1rem] px-3 py-1 font-semibold">View Docs -> </p>
+        </div>
+        <div>
+            <!-- <img src="/build/browser/static/integrations.f81717ed.svg" alt="" class="w-100% h-100%"> -->
+            <p  class="text-white font-semibold text-[1.2rem] px-3 py-4">Integrations</p>
+            <p class="text-white text-[0.9rem] px-3 py-1">Find all popular platform SDKs, plugin, server integrations in our integration stack.</p>
+            <p class="text-white text-[1rem] px-3 py-1 font-semibold">View Docs -> </p>
+        </div>
+    </div>
+    <div class="flex flex-row mx-auto w-10/12 gap-[50px] pb-[120px]">
+        <p  class="text-white font-semibold text-[2.5rem]"> Try it out for yourself > </p>
+        <img src="Code.jpg" alt="" width="700px" height="400px" class="hover:opacity-40 ">
+        <!-- <p class="bg-footer-pattern"></p> -->
+    </div>
+
+</div>
+
+<div class="bg-slate-100 pb-[120px]">
+    <div class="mx-auto w-9/12">
+    <p class="text-slate-500 text-[20px] pt-[80px]">what html?</p>
+    <p class="font-semibold text-green-600 text-[50px] space-x-0">Not a developer?</p>
+    <p class="font-semibold text-slate-900 text-[50px] pb-[80px]">Our No-Code products have you covered.</p>
+    <div class="flex flex-row gap-4">
+        <div class="bg-white w-[387.26px] h-[260px] px-[48px] py-[28px] hover:shadow-lg hover:cursor-pointer">
+            <p class="text-slate-900 text-[20px] pb-8">Payment Links</p>
+            <p class="text-slate-900 text-[25px] font-semibold pb-5">Accept payments instantly <span class="text-blue-600">Share links</span> via emails, text, or social</p>
+            <p class="text-blue-600 font-bold hover:text-blue-700">Sign Up -></p>
+        </div>
+        <div class="bg-white w-[387.26px] h-[260px] px-[48px] py-[28px] hover:shadow-lg hover:cursor-pointer">
+            <p class="text-slate-900 text-[20px] pb-8">Payment Pages</p>
+            <p class="text-slate-900 text-[25px] font-semibold pb-5">Accept payments without <span class="text-blue-600">coding a custom-branded store</span></p>
+            <p class="text-blue-600 font-bold hover:text-blue-700">Sign Up -></p>
+        </div>
+        <div class="bg-white w-[387.26px] h-[260px] px-[48px] py-[28px] hover:shadow-lg hover:cursor-pointer">
+            <p class="text-slate-900 text-[20px] pb-8">Payment Button</p>
+            <p class="text-slate-900 text-[25px] font-semibold pb-5">Effortlessly<span class="text-blue-600">add a pay now button</span> without any coding Knowledge</p>
+            <p class="text-blue-600 font-bold hover:text-blue-700">Sign Up -></p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- <div>
+    <div>
+        <p>Razorpay grows with you!</p>
+        <p>1,50,000+ Businesses</p>
+    </div>
+    <div>
+        <img src="https://media.razorpay.com/file/platform/acquisition/home/testim-nikita.png?w=xl&project=website-media" alt="" class="w-[350px] h-[350px]">
+        <p class="bg-black text-white font-semibold text-[20px]">Nikita Gujral</p>
+    </div>
+</div> -->
+
+<div class=" bg-slate-100 mt-12">
+<footer class="mx-auto w-9/12">
+    <p class="font-semibold text-slate-800 text-[50px] pt-[80px]">Supercharge your business </p>
+    <p class="font-semibold text-slate-800 text-[50px] pb-9">with Razorpay</p>
+    <button class="py-3 px-5 font-sans rounded-sm text-sm font-bold bg-blue-600 text-white border hover:bg-blue-700">Sign Up Now -></button>
+    <div class="flex flex-row">
+        <div class=" h-[377.4px] pr-[50px]">
+            <img src="razorpay.jpeg" alt="" width="125px"
+            height="9px" class="pt-[70px]">
+            <p class="text-slate-500 text-[12px] text-base/16 w-[300px]">Razorpay is the only payments solution in India that allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, netbanking, UPI and popular wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.</p>
+            <br>
+            <p class="text-slate-500 text-[12px] text-base/16 w-[300px]">RazorpayX supercharges your business banking experience, bringing effectiveness, efficiency, and excellence to all financial processes. With RazorpayX, businesses can get access to fully-functional current accounts, supercharge their payouts and automate payroll compliance.</p>
+            <br>
+            <p class="text-slate-500 text-[12px] text-base/16 w-[300px]">Manage your marketplace, automate bank transfers, collect recurring payments, share invoices with customers and avail working capital loans - all from a single platform. Fast forward your business with Razorpay.</p><br>
+            <p class="text-slate-500 text-[12px] text-base/16 w-[300px]">Disclaimer: The RazorpayX powered Current Account and VISA corporate credit card are provided by RBI licensed banks. Your RazorpayX powered current account is provided by our partner banks i.e, ICICI & RBL bank, in accordance with RBI regulations. RazorpayX itself is not a bank and doesn't hold or claim to hold a banking license.</p><br>
+            <div class="flex flex-row ">
+                <img src="img1.png" alt="" width="80px"
+                height="1px" class="pr-7">
+                <img src="img2.png" alt="" width="125px"
+                height="9px">
+            </div>
+        </div>
+            <div class="w-[297.34px] h-[1000px]">
+            <p class="text-slate-700 font-semibold">BANKING PLUS</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">RazorpayX</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Source to Pay</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Current accounts</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Payouts</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Payouts Link</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Corporate Credit Cards</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">LENDING</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Razorpay capital</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Instant Settlements</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Line of Credit</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Working Capital Loans</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Marketplace Instants Settlements</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">BECOME A PARTNER</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Refer and Earn</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Onboarding APIs</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">MORE</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Route</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Invoices</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">FreeLancer Payments</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">International</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Flash Checkout</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">UPI</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">ePOS</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Checkout Demo</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">RazorpayX Payroll</a></li>
+        </div>
+        <div class="w-[297.34px] h-[1000px]">
+            <p class="text-slate-700 font-semibold">ACCEPT PAYMENTS</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Payment Gateway</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Payment Pages</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Payment Links</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Razorpays POS</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">QR Codes</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Subscriptions</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Smart collect</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Optimizer</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">DEVELOPERS</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Docs</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Integrations</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">API Reference</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">RESOURCES</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Blog</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Customer Stories</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Events</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Chargeback Guide</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Settlement Guide</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">SOLUTIONS</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Education</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">E-commerce</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">SaaS</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">BFSI</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">FREE TOOLS</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">GST Calculator</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Online TDS Payment</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">GST Number Search</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">GST Search by PAN</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">ROI Calculator</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">CAGR Calculator</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">EBITDA Calculator</a></li>
+        </div>
+        <div class="w-[297.34px] h-[1000px]">
+            <p class="text-slate-700 font-semibold">COMPANY</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">About Us</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Careers</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Terms of Use</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Privacy Policy</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Grievance Redressal</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Responsible Disclosure</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Partners</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">White papers</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Corporate Information</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">HELP & SUPPORT</p>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Support</a></li>
+            <li class="text-blue-600 list-none font-semibold"><a href="#">Knowledge base</a></li>
+            <br>
+            <br>
+            <p class="text-slate-700 font-semibold">FIND US ONLINE</p>
+            <div class="flex flex-row w-[30px]" >
+                <img src="facebook.png" alt="" class="rounded-md ">
+                <img src="twitter.png" alt="" class="rounded-md ">
+                <img src="instagram.jpeg" alt="" class="rounded-md ">
+                <img src="github.png" alt="" class="rounded-md">
+                <img src="linkedin.png" alt="" class="rounded-md">
+            </div>
+            <p class="text-slate-700 font-semibold">REGD. OFFICE ADDRESS</p>
+            <p class="text-slate-500 text-[13px]">Razorpay Software Private Limited,
+                1st Floor, SJR Cyber,
+                22 Laskar Hosur Road, Adugodi,
+                Bengaluru, 560030,
+                Karnataka, India
+                CIN: U72200KA2013PTC097389
+            </p>
+            <br>
+            <p class="text-slate-500 text-[10px]" >© Razorpay 2024</p>
+                
+            <p class="text-slate-500 text-[11px]">All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
